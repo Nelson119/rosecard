@@ -1,0 +1,47 @@
+nav.share {
+	position:fixed;
+	background: #fff;
+	top: calc(50% - 36px * 3);
+	right:0;
+	ul{
+
+		box-shadow: #dd6d93 0 0 8px;
+		mix-blend-mode:multiply;
+		margin:0;
+		padding:0;
+	}
+	li{
+		list-style: none;
+		line-height: 25px;
+		a{
+			height: 36px;
+			background: center center no-repeat;
+		    color: rgba(0, 0, 0, 0);
+		    font-size: 0;
+		    text-indent: -9999em;
+		    display: inline-block;
+		    width: 34px;
+			transition-duration: 0.45s;
+		    &:hover{
+		    	opacity: 1;
+		    }
+		}
+		.facebook{
+			background-image:url(../img/social/facebook.png);
+		}
+		.googleplus{
+			background-image:url(../img/social/gplus.png);
+		}
+		.email{
+			background-image:url(../img/social/mail.png);
+		}
+	}
+	&:hover{
+		a{
+			opacity: 0.65;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+}

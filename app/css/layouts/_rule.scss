@@ -1,0 +1,63 @@
+.rule {
+	background:url(../img/rule/bg.png) center 0 /cover;
+	min-height: calc(90px);
+	padding:10px;
+
+	h3{
+		margin:50px auto 0;
+		width: 1056px;
+		height: 165px;
+		background: url(../img/rule/bg-top.png) center 23px no-repeat;
+		// background: url(../img/calendar/title.png) center top no-repeat;
+
+		img{
+			filter: invert(1);
+			height: 115px;
+			width: 216px;
+		}
+
+		span{
+			display: inline-block;
+			font-weight: normal;
+			letter-spacing: 2px;
+			line-height: 1.8;
+			margin-left: 120px;
+			margin-top: 13px;
+			position: absolute;
+			max-width: 416px;
+		}
+	}
+
+
+	.container{
+		margin-top: -100px;
+		width: 1056px;
+		line-height: 2em;
+
+		p{
+			margin: 0;
+		}
+
+		.w850{
+			width: 850px;
+		}
+
+		table{
+			border-right:1px solid #000;
+			border-top:1px solid #000;
+			td{
+				border-left:1px solid #000;
+				border-bottom:1px solid #000;
+				height: 33px;
+				vertical-align: middle;
+				text-align: center;
+			}
+		}
+	}
+	.butt{
+		background: url(../img/rule/bg-butt.png) center 0/cover no-repeat;
+		width: 1056px;
+		height: 165px;
+		margin-top: -80px;
+	}
+}

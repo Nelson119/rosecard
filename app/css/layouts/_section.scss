@@ -1,0 +1,29 @@
+.section {	
+	position: relative;
+	.scroll-hint-container{
+		position: absolute;
+		// width: 100%;
+		bottom: -43px;
+		left: calc(50% - 62px);
+		@media screen and (max-width: 768px) {
+			bottom: vwsm(-60);
+			left: calc(50% - 10vw);
+		}
+		z-index: 1;
+		.scroll-hint{
+			background: url( ../img/common/scroll-hint.png);
+			font-weight: bold;
+			line-height: 1.2;
+			padding: 23px 20px;
+			height: 123px;
+			width: 123px;
+			display: inline-block;
+			@media screen and (max-width: 768px) {
+				background: url( ../img/common/scroll-hint.png) 0 0/ cover;
+				height: vwsm(171);
+				width: vwsm(171);
+				padding: vwsm(30) vwsm(15);
+			}
+		}
+	}
+}

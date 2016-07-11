@@ -1,0 +1,43 @@
+{
+  "name": "frontend",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "gsap": "^1.18.5",
+    "font-awesome": "fontawesome#^4.6.3",
+    "lodash": "^4.13.1",
+    "detectizr": "^2.2.0",
+    "classie": "^1.0.1",
+    "selectfx.js": "*",
+    "d3": "^4.0.0",
+    "bootstrap-validator": "^0.10.2"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "less/font-awesome.less",
+        "scss/font-awesome.scss",
+        "fonts/*"
+      ]
+    },
+    "selectfx.js": {
+      "main": [
+        "dist/css/selectfx.css",
+        "dist/js/query_selectfx.js",
+        "dist/js/selectfx.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}

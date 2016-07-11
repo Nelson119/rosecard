@@ -1,0 +1,141 @@
+.concert {
+	background:url(../img/concert/bg.png) center 0 /cover;
+	min-height: calc(90px);
+	padding:10px;
+
+	h3{
+		margin:50px auto 0;
+		width: 1056px;
+		height: 188px;
+		background: url(../img/concert/bg-top.png) center 23px no-repeat;
+		// background: url(../img/calendar/title.png) center top no-repeat;
+
+		@media screen and (max-width: 768px) {
+			width: vwsm(700);
+			background: url(../img/concert/bg-top.png) center vwsm(50)/100% auto no-repeat;
+		}
+
+		img{
+			filter: invert(1);
+			height: 115px;
+			width: 216px;
+		}
+
+	}
+
+	.head{
+
+		@media screen and (max-width: 768px) {
+			width: vwsm(353);
+			height: vwsm(120);
+			img{
+				width: 100%;
+			}
+		}
+	}
+
+	.container{
+		margin-top: -100px;
+
+		.text{
+			width: 470px;
+			display: inline-block;
+			color: #525252;
+			line-height: 2;
+			@media screen and (max-width: 768px) {
+				width: vwsm(700);
+				display: block;
+			}
+			p{
+				margin: 22px 0 0;
+				@media screen and (max-width: 768px) {
+					margin: 1.5em 0 0;
+				}
+			}
+			.august-3{
+				margin-top: 100px;
+			}
+		}
+
+		.video{
+			width: 436px;
+			height: 330px;
+			position: relative;
+			background: url(../img/concert/video-bg.png);
+
+			@media screen and (max-width: 768px) {
+				width: vwsm(436);
+				height: vwsm(330);
+				background: url(../img/concert/video-bg.png) 0 0/cover;
+				margin: vwsm(56) auto 0;
+			}
+
+			a{
+				position: absolute;
+				display: block;
+				width: 100%;
+				height: 100%;
+				opacity: 0.85;
+				transition-duration: 0.3s;
+				background: url(../img/concert/play-button.png) center center no-repeat;
+
+				&:hover{
+					opacity: inherit;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				& ~p{
+					line-height: 1.6;
+					margin: 0;
+				}
+			}
+		}
+		.padding-left-100{
+			padding-left:30px;
+			@media screen and (max-width: 768px) {
+				padding-left:0;
+			}
+		}
+		h4{
+			margin-top: 100px;
+			@media screen and (max-width: 768px) {
+				padding-left: vwsm(380);
+			}
+		}
+		a.go-button{
+			margin: 0 0 0 10px;
+			color: rgba(255,255,255,0.8);
+			background: url(../img/common/button.png) center 0 no-repeat;
+			width: 169px;
+			height: 42px;
+			display: inline-block;
+			line-height: 44px;
+			text-align: center;
+			text-decoration: none;
+			opacity: 0.9;
+			transition-duration: 0.2s;
+			&:hover{
+				opacity: inherit;
+			}
+			@media screen and (max-width: 768px) {
+				width: vwsm(243);
+				height: vwsm(65);
+				line-height: vwsm(65);
+				margin: 0;
+				background: url(../img/common/button.png) center 0/ 100% auto no-repeat;
+			}
+		}
+		.august-3 {
+			@media screen and (max-width: 768px) {
+				top: vwsm(800);
+				position: absolute;
+				z-index: 1;
+				width: vwsm(316);
+				height: vwsm(132);
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
