@@ -218,4 +218,9 @@ app.calendar = function(){
 	}
 
 	d3.select(self.frameElement).style('height', height + 'px');
+
+
+	$('.slick-info ul').slick({
+		dots: false
+	});
 };

@@ -204,4 +204,33 @@
 			}
 		}
 	}
+
+
+	.slick-info{
+		.slick-prev, .slick-next{
+			position: absolute;
+			width: 50px;
+			height: 123px;
+			border: 0;
+			box-shadow:none;
+			color: rgba(0,0,0,0);
+			top: calc(50% - 62px); 
+		}
+		.slick-prev{
+			background:url(../img/calendar/prev.png);
+		}
+		.slick-next{
+			background:url(../img/calendar/next.png);
+			right: 0;
+		}
+		.himalaya{
+			font-family: 'microsoft himalaya';
+			font-size: 123px;
+		}
+		ul{
+			li{
+
+			}
+		}
+	}
 }

@@ -11,7 +11,8 @@
     "classie": "^1.0.1",
     "selectfx.js": "*",
     "d3": "^4.0.0",
-    "bootstrap-validator": "^0.10.2"
+    "bootstrap-validator": "^0.10.2",
+    "slick-carousel": "^1.6.0"
   },
   "overrides": {
     "bootstrap-sass": {
