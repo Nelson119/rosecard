@@ -36,6 +36,7 @@ app.index = function(){
 	
 	(function() {
 		[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+			el.labels = $('<i></i>');
 			new SelectFx(el);
 		} );
 	})();
