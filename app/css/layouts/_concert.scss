@@ -93,7 +93,7 @@
 		.padding-left-100{
 			padding-left:30px;
 			@media screen and (max-width: 768px) {
-				padding-left:0;
+				padding-left:15px;
 			}
 		}
 		h4{
@@ -118,10 +118,10 @@
 				opacity: inherit;
 			}
 			@media screen and (max-width: 768px) {
-				width: vwsm(243);
+				width: vwsm(240);
 				height: vwsm(65);
-				line-height: vwsm(65);
-				margin: 0;
+				line-height: vwsm(57);
+				margin: 0 0 0 vwsm(20);
 				background: url(../img/common/button.png) center 0/ 100% auto no-repeat;
 			}
 		}
@@ -134,6 +134,34 @@
 				height: vwsm(132);
 				img{
 					width: 100%;
+				}
+			}
+		}
+
+		.butt{
+			background: url(../img/concert/bg-butt.png) center bottom no-repeat;
+			padding:0 100px 50px;
+			@media screen and (max-width: 768px) {
+				padding:0 20px vwsm(220);
+				background: url(../img/concert/bg-butt.png) center bottom/100% auto no-repeat;
+			}
+			h4{
+				margin-top: 188px;
+			}
+			.go-button{
+				margin-left: -3px;
+			}
+			.flower{
+				bottom: -15px;
+				right: 156px;
+				position: absolute;
+				@media screen and (max-width: 768px) {
+					bottom: vwsm(-18);
+					width: vwsm(270);
+					right: 0;
+					img{
+						width: 100%;
+					}
 				}
 			}
 		}
