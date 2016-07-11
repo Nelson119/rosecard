@@ -20,3 +20,4 @@ install:
 - git commit -m "Deployed to Github Pages"
 - git push -f --quiet origin master:gh-pages
 - cd ..
+
