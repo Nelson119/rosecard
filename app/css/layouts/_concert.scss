@@ -142,11 +142,21 @@
 			background: url(../img/concert/bg-butt.png) center bottom no-repeat;
 			padding:0 100px 50px;
 			@media screen and (max-width: 768px) {
-				padding:0 20px vwsm(220);
+				padding:0 vwsm(34) vwsm(76);
 				background: url(../img/concert/bg-butt.png) center bottom/100% auto no-repeat;
 			}
 			h4{
 				margin-top: 188px;
+				@media screen and (max-width: 768px) {
+					margin-top: vwsm(100);
+					width: vwsm(356);
+					padding: 0;
+				}
+			}
+			p{
+				@media screen and (max-width: 768px) {
+					width: vwsm(428);
+				}
 			}
 			.go-button{
 				margin-left: -3px;
