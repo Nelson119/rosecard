@@ -293,4 +293,50 @@
 			}
 		}
 	}
+
+	.thankyou{
+		z-index: 1;
+		background: url(../img/form/thankyou.png) ;
+		color: #fff;
+		height: 474px;
+		left: calc(50% - 350px);
+		position: absolute;
+		top: 145px;
+		width: 700px;
+
+		h4{
+			margin: 22px auto 37px;
+		}
+		p{
+			margin-bottom: 2px; 
+		}
+		a.go-button{
+			margin: 180px auto 0;
+			color: rgba(255,255,255,0.8);
+			background:url(../img/index/go.png);
+			width: 169px;
+			height: 42px;
+			display: inline-block;
+			line-height: 44px;
+			text-align: center;
+			text-decoration: none;
+			opacity: 0.9;
+			transition-duration: 0.2s;
+			&:hover{
+				opacity: inherit;
+			}
+		}
+		.tagline{
+			display: inline-block;
+			line-height: 20px;
+			margin-right: -130px;
+			padding-top: 0;
+			text-align: left;
+		}
+		.close{
+			position: absolute;
+			top:5px;
+			right:5px;
+		}
+	}
 }

@@ -207,6 +207,26 @@
 
 
 	.slick-info{
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		background: url(../img/calendar/slick-bg.png) 0 0 /cover no-repeat;
+		color: #fff;
+
+		.close{
+			position: absolute;
+			top:0;
+			right:0;
+			@media screen and (max-width: 768px) {
+				opacity: 1;
+				img{
+					width: vwsm(75);
+					height: vwsm(75);
+				}
+			}
+		}
+
 		.slick-prev, .slick-next{
 			position: absolute;
 			width: 50px;
@@ -215,21 +235,155 @@
 			box-shadow:none;
 			color: rgba(0,0,0,0);
 			top: calc(50% - 62px); 
+			z-index: 1;
+			@media screen and (max-width: 768px) {
+				display: none !important;
+			}
 		}
 		.slick-prev{
-			background:url(../img/calendar/prev.png);
+			background:url(../img/calendar/prev.png) 0 0 /cover no-repeat;
 		}
 		.slick-next{
-			background:url(../img/calendar/next.png);
+			width: 46px;
+			height: 121px;
+			background:url(../img/calendar/next.png) 0 0 /cover no-repeat;
 			right: 0;
 		}
 		.himalaya{
 			font-family: 'microsoft himalaya';
-			font-size: 123px;
+		}
+		h4{
+			white-space: nowrap;
+			font-weight: normal;
+			margin:0;
+			@media screen and (max-width: 768px) {
+				padding: 0 40px;
+			}
 		}
 		ul{
+			padding: 0;
+			margin: 0;
+		}
+		.slick-list{
+			position: relative;
+			@media screen and (max-width: 768px) {
+				overflow: visible;
+			}
+			img{
+				display: inline-block;
+				@media screen and (max-width: 768px) {
+					height: vwsm(84);
+				}
+			}
 			li{
+				height: 555px;
+				@media screen and (max-width: 768px) {
+					height: auto;
+					// max-width: calc()
+					z-index:1;
+				}
+				aside{
+					padding: 0 calc(50% - 450px);
+				}
+			}
+		}
+		.post{
+			width: 520px;
+			@media screen and (max-width: 768px) {
+				width: 96%!important;
+			}
+			& + .post{
+				margin-top: 50px;
+			}
+		}
+		figure{
+		}
+		.title{
+			font-weight: lighter;
+		}
+		h5{
+			line-height: 45px;
+		}
+		.month-calendar{
+			margin-top: 85px;
+			@media screen and (max-width: 768px) {
+				margin-top: vwsm(105);
+			}
+		}
+		.post-list{
+			width: 570px;
+			margin-top:78px;
+			max-height: 370px;
+			overflow: hidden;
+			@media screen and (max-width: 768px) {
+				max-width: 100%!important;
+				// height: vwsm(595);
+				margin: 0;
+				position: absolute;
+				left:0;
+				height: auto;
+				// display: none;
+				// max-height: 370px;
+				padding: 0 5vw!important;
+				top: 30vw;
+				overflow: auto;
 
+				background: #a75466;
+			}
+		}
+		.jspVerticalBar{
+			width: 2px;
+			@media screen and (max-width: 768px) {
+				display: none;
+			}
+		}
+		.jspDrag {
+			background: #7388b4;
+		}
+		.jspTrack {
+			background: #eeb8c3;
+		}
+		.jspContainer{
+			@media screen and (max-width: 768px) {
+				overflow: auto;
+			}
+		}
+	}
+
+	.slick-info figure{
+		line-height: 2.5;
+		@media screen and (max-width: 768px) {
+			padding: 0 40px;
+			margin-top: vwsm(-100);
+		}
+		.row{
+			margin: -20px 0 0 -20px;
+
+			@media screen and (max-width: 768px) {
+				margin: 0 -15px;
+			}
+		}
+		a{
+			width: percentage(1/7);
+			padding: 0;
+			text-align: center;
+			color: #fff;
+			line-height: 3;
+			&.active, &:hover{
+				background: url(../img/calendar/focus-small.png) center center no-repeat;
+			}
+
+			&:nth-child(1){
+				margin-left: percentage(5 / 7);
+				width: percentage(1/7);
+			}
+			@media screen and (max-width: 768px) {
+				&.active ~ .gap {
+					height: vwsm(595);
+					& ~.gap{
+						height:0;
+					}
+				}
 			}
 		}
 	}

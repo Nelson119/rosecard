@@ -39,6 +39,10 @@
 
 		@media screen and (max-width: 768px) {
 			width: auto;
+			ul{
+				margin-left: vwsm(-50);
+				width:  vwsm(720);
+			}
 		}
 
 		p{
@@ -52,9 +56,6 @@
 			}
 		}
 
-		ul{
-			margin-left: vwsm(-50);
-		}
 
 		table{
 			border-right:1px solid #000;

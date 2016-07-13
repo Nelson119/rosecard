@@ -109,7 +109,7 @@
 			width: 169px;
 			height: 42px;
 			display: inline-block;
-			line-height: 44px;
+			line-height: 40px;
 			text-align: center;
 			text-decoration: none;
 			opacity: 0.9;
@@ -165,6 +165,7 @@
 				bottom: -15px;
 				right: 156px;
 				position: absolute;
+				z-index: 1;
 				@media screen and (max-width: 768px) {
 					bottom: vwsm(-18);
 					width: vwsm(270);
@@ -174,6 +175,14 @@
 					}
 				}
 			}
+		}
+
+		.reminder{
+			margin-top:60px;
+			color: #858585;
+			line-height: 2;
+			letter-spacing: 2px;
+			font-weight: lighter;
 		}
 	}
 }

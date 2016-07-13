@@ -74,13 +74,13 @@ $browser-lg-viewport: 1366; // Default
   background: linear-gradient($direction, $color-stops);
 }
 
-@for $i from 11 to 44 {
+@for $i from 6 to 150 {
 	.fontsize-#{$i} {
 		font-size: percentage($i/$base-font-size-num);
 	}
 }
 
-@for $i from 11 to 44 {
+@for $i from 6 to 150 {
 	.fontsize-sm-#{$i} {
 		@media screen and (max-width: 768px) {
 			font-size: vwsm($i);

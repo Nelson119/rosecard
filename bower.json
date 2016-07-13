@@ -12,7 +12,8 @@
     "selectfx.js": "*",
     "d3": "^4.0.0",
     "bootstrap-validator": "^0.10.2",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.6.0",
+    "jScrollPane": "^2.0.23"
   },
   "overrides": {
     "bootstrap-sass": {
